@@ -201,7 +201,52 @@ int main() {
     return 0;
     }
 ```
-11
+11.WRITE A C PROGRAM TO FIND THE FACTORIAL OF A GIVEN NUMBER USING A FOR LOOP.
+```
+#include <stdio.h>
 
+int main() {
+    int n,i;
+    long long factorial = 1;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    if(n<0){
+        printf("number is invalid.\n");
+    }else{
+        for(i=1;i<=n;i++)
+        factorial *= i;
+    }
+    printf("Factorial of a number %d = %lld",n,factorial);
 
+    return 0;
+}
+```
+12..WRITE A C PROGRAM TO CHECK WHETHER A GIVEN NUMBER IS PRIME OR NOT USING A WHILE LOOP?
+```
+#include<stdio.h>
+int main(){
+    int i=2,n;
+    int isprime = 1;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    if(n<=1){
+        isprime=0;
+    }else{
+        while (i <= n / 2) {
+            if (n % i == 0) {
+                isprime = 0;
+                break;
+            }
+    }
+    i++;
+    }
+    if (isprime == 1)
+    printf("%d is a prime number",n);
+    else
+    printf("%d is not a prime number",n);
+    return 0;
+    
+}
+```
+13.
 
